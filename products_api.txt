@@ -1,0 +1,11 @@
+npm init -y //crear paquete json por defecto
+npm init //configurar datos de la aplicacion por consola
+npm i express(funciones de enrutamiento web) bcryptjs(cifrar) cors(conex/ion entre backend y frontEnd) dotenv(crear variables de entorno) jsonwebtoken(autentificar usuarios de la api) mongoose(manipular datos de mongodb libreria) morgan(ver consultas que llegan al servidor) helmet (seguridad del servidor, oculta informacion delicada)                                    
+npm i @babel/core @babel/cli @babel/preset-env @babel/node nodemon -D //babel para convertir el codigo, a codigo soportado por los navegadores
+crear carpeta src //codigo de la aplicacion
+mkdir controllers libs middlewares models routes //estructura de carpetas dentro de src
+archivos a crear app.js config.js database.js
+crear archivo .babelrc //define el preset, que va a traducir babel
+"build": "babel src --out-dir build", //produccion
+"dev": "nodemon src/index.js --exec babel-node", //desarrollo ejecucion
+"start": "node build/index.js" //desarrollo produccion
